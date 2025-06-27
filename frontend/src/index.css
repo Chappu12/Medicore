@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@1,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit";
+}
+.active hr {
+  @apply block;
+}
+
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+html.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 740px) {
+   .active p {
+    @apply text-white bg-primary rounded-lg px-2 py-1;
+   }
+
+}
+
+.input {
+    @apply border border-zinc-300 rounded w-full p-2 mt-1;
+}
