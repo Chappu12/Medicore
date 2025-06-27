@@ -27,6 +27,7 @@ public class AppointmentController {
             @RequestBody AppointmentRequestDTO dto,
             @AuthenticationPrincipal UserDetails userDetails
     ) {
+        System.out.println("Hi");
         Appointment appointment = service.bookAppointment(dto, userDetails.getUsername());
         Map<String, Object> response = new HashMap<>();
         response.put("success", true);
